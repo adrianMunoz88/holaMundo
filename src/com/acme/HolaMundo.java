@@ -5,8 +5,11 @@ public class HolaMundo {
 
         System.out.println("Hola Mundo");
         Mensaje msj = new Mensaje();
-        String mensaje = msj.solicitarDatos("Escribe tu mensaje");
-        msj.saludar(mensaje);
+        String nombre = msj.solicitarDatos("Escribe tu nombre");
+        String apellido = msj.solicitarDatos("Escribe tu apellido");
+        Persona p1 = new Persona(nombre,apellido);
+        msj.saludar(p1);
+
 
     }
 }
