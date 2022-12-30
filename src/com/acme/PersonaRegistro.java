@@ -4,7 +4,8 @@ public record PersonaRegistro(String nombre, String apellido) {
 
     @Override
     public String toString() {
-        System.out.println("Esta instruccion no sirve");
+        //No pongas basura Carnal
+        //System.out.println("Esta instruccion no sirve");
         return "%s %s".formatted(nombre,apellido);
     }
 }
